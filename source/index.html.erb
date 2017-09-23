@@ -2,14 +2,72 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
-  <div class="home-content">
+<!-- <div id="home"> -->
+  <div class="banner" style="background-image: linear-gradient(0deg, rgba(0,10,10,0.1) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+    <div class="banner-content">
+      <h1>Welcome Mate !</h1>
+      <p>Enjoy one of my first website and let's choose a destination !</p>
+      <form action="#" class="form-inline">
+        <input type="text" class="form-control input-lg" placeholder="Where?">
+        <input type="When?" class="form-control input-lg" placeholder="When?">
+        <select name id class="form-control input-lg">
+          <option value="1">1 friend</option>
+          <option value="2">2 friends</option>
+          <option value="3">Girlfriend</option>
+          <option value="4">All friends</option>
+        </select>
+        <input type="submit" value="Let's Go" class="btn btn-primary btn-lg">
+      </form>
+    </div>
+  </div>
+  <h2> Few destinations </h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+          <div class="card-category">Quite Popular</div>
+          <div class="card-description">
+            <h2>Shanghai</h2>
+            <p>Very cool city, if you like Asians</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+          <a class="card-link" href="#" ></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/barcelona');">
+          <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Barcelona</h2>
+            <p>Amazing parties and beaches !</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+          <a class="card-link" href="#" ></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+          <div class="card-category">Very Popular</div>
+          <div class="card-description">
+            <h2>Paris</h2>
+            <p>Probably the best city in the word !</p>
+          </div>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+          <a class="card-link" href="#" ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
     <p>
-      Middleman is now running!
+      Middleman is now running! Let's Start !
     </p>
     <p class="about">
       <%= link_to "More about this template", "about.html" %>
     </p>
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->
