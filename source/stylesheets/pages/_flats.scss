@@ -1,0 +1,40 @@
+.header-flat-name{
+  font-size: 10px;
+  h1 {
+    font-size: 16px}
+}
+
+.img-radius {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.container-white{
+  background-color: #FFFFFF;
+  margin: 0px;
+  padding: 15px;
+}
+
+.banner-img{
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+.header-flat{
+  margin: 0px;
+}
+
+li, a{
+  color:#9B9B9B;
+  font-size: 12px;
+}
+
+.header-flat-details{
+
+}

@@ -3,25 +3,60 @@ title: Le Wagon - Middleman
 ---
 
 <!-- <div id="home"> -->
-  <div class="banner" style="background-image: linear-gradient(0deg, rgba(0,10,10,0.1) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/paris');">
-    <div class="banner-content">
-      <h1>Welcome Mate !</h1>
-      <p>Enjoy one of my first website and let's choose a destination !</p>
-      <form action="#" class="form-inline">
-        <input type="text" class="form-control input-lg" placeholder="Where?">
-        <input type="When?" class="form-control input-lg" placeholder="When?">
-        <select name id class="form-control input-lg">
-          <option value="1">1 friend</option>
-          <option value="2">2 friends</option>
-          <option value="3">Girlfriend</option>
-          <option value="4">All friends</option>
-        </select>
-        <input type="submit" value="Let's Go" class="btn btn-primary btn-lg">
-      </form>
-    </div>
+<div class="banner" style="background-image: linear-gradient(0deg, rgba(0,10,10,0.1) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+  <div class="banner-content">
+    <h1>Welcome Mate !</h1>
+    <p>Enjoy one of my first website and let's choose a destination !</p>
+    <form action="#" class="form-inline">
+      <input type="text" class="form-control input-lg" placeholder="Where?">
+      <input type="When?" class="form-control input-lg" placeholder="When?">
+      <select name id class="form-control input-lg">
+        <option value="1">1 friend</option>
+        <option value="2">2 friends</option>
+        <option value="3">Girlfriend</option>
+        <option value="4">All friends</option>
+      </select>
+      <input type="submit" value="Let's Go" class="btn btn-primary btn-lg">
+    </form>
   </div>
-  <h2> Few destinations </h2>
-  <div class="container">
+</div>
+<h2> Few destinations </h2>
+<div class="container" id="home-flats">
+  <h2 class="text-center">Recent flats</h2>
+  <div class="row">
+    <% data.flats.each do |owner, flat| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
+          <div class="card-category"><%= flat.city_name %></div>
+          <div class="card-description">
+            <h3><%= flat.name %></h3>
+            <p><%= flat.description %></p>
+          </div>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
+          <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+
+  <!-- <div class="home-content">
+    <%= image_tag "logo.png", width: "200" %>
+    <p>
+      Middleman is now running! Let's Start !
+    </p>
+    <p class="about">
+      <%= link_to "More about this template", "about.html" %>
+    </p>
+  </div> -->
+<!-- </div> -->
+
+<!--
+<div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-4">
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
@@ -56,18 +91,4 @@ title: Le Wagon - Middleman
           <a class="card-link" href="#" ></a>
         </div>
       </div>
-    </div>
-  </div>
-
-
-
-  <!-- <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running! Let's Start !
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div> -->
-<!-- </div> -->
+    </div> -->
